@@ -20,4 +20,4 @@
 - Run the app.py in the terminal. Copy the local url to your web browser, or press COMMAND + doubleclick the local url.
 
 ![png](github_img/mission_to_mars.png)
-![png](github_img/hemispheres.png)
+![png](github_img/hemisphere.png)
