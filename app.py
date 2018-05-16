@@ -13,7 +13,7 @@ def index():
         mars_data = mongo.db.mars_data.find_one()
         return render_template('index.html', mars_data=mars_data)
     except:
-        return redirect("http://localhost:5000/scrape")
+        return redirect("http://localhost:5000/scrape", code=302)
 
 @app.route("/scrape")
 def scraped():
