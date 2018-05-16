@@ -9,8 +9,11 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
-    mars_data = mongo.db.mars_data.find_one()
-    return render_template('index.html', mars_data=mars_data) 
+    try:
+        mars_data = mongo.db.mars_data.find_one()
+        return render_template('index.html', mars_data=mars_data)
+    except:
+        return redirect("http://localhost:5000/scrape")
 
 @app.route("/scrape")
 def scraped():
