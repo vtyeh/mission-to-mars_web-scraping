@@ -11,7 +11,7 @@ def init_browser():
     """ Connects path to chromedriver """
     
     executable_path = {'executable_path': '/Users/venessayeh/Downloads/chromedriver'}
-    return Browser("chrome", **executable_path, headless=False)
+    return Browser("chrome", **executable_path, headless=True)
 
 def scrape():
     """ Scrapes all websites for Mars data """
